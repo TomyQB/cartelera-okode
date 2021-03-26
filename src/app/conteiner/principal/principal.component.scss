@@ -1,0 +1,26 @@
+.container {
+  background-color: #181818;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+
+  &-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.container_logo {
+  display: flex;
+  justify-content: end;
+
+  &-div {
+    position: fixed;
+    margin-left: 10px;
+    bottom: 0px;
+    z-index: 10;
+  }
+
+}
+

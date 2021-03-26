@@ -1,0 +1,57 @@
+<div class="container">
+  <img src="https://image.tmdb.org/t/p/w92{{selectFilm['poster_path']}}" class="container-img">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label>Titulo original: {{selectFilm['original_title']}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Titulo: {{selectFilm['title']}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Fecha de estreno: {{selectFilm['release_date']}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label> Popularidad: {{selectFilm['popularity']}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col *ngIf="selectFilm['adult']">
+        <ion-label>Pelicula +18: Si</ion-label>
+      </ion-col>
+      <ion-col *ngIf="!selectFilm['adult']">
+        <ion-label>Pelicula +18: No</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Generos: </ion-label>
+        <ion-label *ngFor="let genre of detailsFilm['genres']">{{genre.name}}  </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Productoras: </ion-label>
+        <ion-label *ngFor="let productora of detailsFilm['production_companies']">{{productora.name}}  </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Sinápsis: {{selectFilm['overview']}}</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

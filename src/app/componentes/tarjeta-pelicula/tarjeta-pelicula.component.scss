@@ -1,0 +1,18 @@
+.container {
+  background-color: #181818;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &-img {
+    // height: 40%;
+    width: 40%;
+  }
+}
+
+ion-row {
+  margin-top: 30px;
+  margin-left: 15px;
+}

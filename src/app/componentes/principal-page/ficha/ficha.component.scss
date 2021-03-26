@@ -1,0 +1,31 @@
+.conteiner_ficha {
+
+  max-width: 100%;
+  text-align: center;
+
+  &-conteinerimg {
+    height: 100%;
+  }
+
+  &-img {
+    height: 250px;
+  }
+
+  &-title {
+    font-size: 15px;
+    // word-wrap: break-word;
+  }
+}
+
+.card {
+  background-color: transparent;
+  box-shadow: none !important;
+
+  width: 190px;
+  text-align: center;
+
+
+  &-title {
+    color: white;
+  }
+}

@@ -1,0 +1,20 @@
+
+<div class="container">
+  <ion-searchbar (ionInput)="getItems($event)" ngModel="buscarTitulo"></ion-searchbar>
+
+  <div *ngIf="buscarTitulo == ''" class="container-slide">
+    <app-slide *ngFor="let titulos of listTitulos" [titulosSlide]="titulos"></app-slide>
+  </div>
+
+  <div *ngIf="buscarTitulo != ''" class="container-search">
+    <app-ficha *ngFor="let film of allFillByName" [completeInfoFilm]="film"></app-ficha>
+  </div>
+</div>
+
+
+<div class="container_logo">
+  <div class="container_logo-div">
+    <img src="../../../assets/okode.png">
+  </div>
+</div>
+

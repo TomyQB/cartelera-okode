@@ -24,3 +24,19 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+body {
+  background: linear-gradient(to bottom, #181818, #3d3b3b);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.inner-scroll.scroll-y {
+  background-color: #181818;
+}
+
+// ion-content {
+//   background: linear-gradient(to bottom, #181818, #3d3b3b);
+//   color: white;
+//   font-family: 'Roboto', sans-serif;
+// }

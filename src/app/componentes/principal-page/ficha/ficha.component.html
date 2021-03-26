@@ -1,0 +1,16 @@
+
+<!-- <div class="conteiner_ficha" (click)="navFilmDetail(completeInfoFilm)">
+  <div *ngIf="completeInfoFilm['poster_path']" class="conteiner_ficha-conteinerimg">
+    <img src="https://image.tmdb.org/t/p/w92{{completeInfoFilm['poster_path']}}" class="conteiner_ficha-img">
+  </div>
+  <div class="conteiner_ficha-title">
+    <ion-label>{{completeInfoFilm["title"]}}</ion-label>
+  </div>
+</div> -->
+
+<ion-card class="card" *ngIf="completeInfoFilm['poster_path']" (click)="navFilmDetail(completeInfoFilm)">
+  <img src="https://image.tmdb.org/t/p/w92{{completeInfoFilm['poster_path']}}" class="conteiner_ficha-img">
+  <ion-card-header>
+    <ion-card-title class="card-title">{{completeInfoFilm["title"]}}</ion-card-title>
+  </ion-card-header>
+</ion-card>

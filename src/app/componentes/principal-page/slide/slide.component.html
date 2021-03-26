@@ -1,0 +1,8 @@
+<div class="container_collection">
+  <ion-label class="container_collection-title">{{titulosSlide.titulo}}</ion-label>
+  <ion-slides class="container_collection-slide" [options]="slideOptions">
+    <ion-slide *ngFor="let result of films">
+      <app-ficha [completeInfoFilm]="result"></app-ficha>
+    </ion-slide>
+  </ion-slides>
+</div>

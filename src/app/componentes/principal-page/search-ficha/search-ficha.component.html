@@ -1,0 +1,7 @@
+
+<div *ngIf="searchFilm != undefined" class="container" (click)="navFilmDetail(searchFilm)">
+    <div class="conteiner-conteiner_img">
+      <img src="https://image.tmdb.org/t/p/w92{{searchFilm['poster_path']}}" class="container-img">
+    </div>
+    <ion-label class="container-title">{{searchFilm["title"]}}</ion-label>
+</div>
