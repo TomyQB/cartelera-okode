@@ -3,12 +3,11 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FichaComponent } from '../principal-page/ficha/ficha.component'
 import { SlideComponent } from '../principal-page/slide/slide.component'
-import { SearchFichaComponent } from '../principal-page/search-ficha/search-ficha.component'
 
 
 
 @NgModule({
-  declarations: [SlideComponent, FichaComponent, SearchFichaComponent],
+  declarations: [SlideComponent, FichaComponent],
   imports: [
     CommonModule,
     IonicModule.forRoot()
@@ -16,7 +15,6 @@ import { SearchFichaComponent } from '../principal-page/search-ficha/search-fich
   exports:[
     SlideComponent,
     FichaComponent,
-    SearchFichaComponent
   ]
 })
 
